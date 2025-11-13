@@ -1,69 +1,41 @@
-/* App.css */
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, #83a4d4, #b6fbff); /* Blå gradient */
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body { 
+ margin: 0; 
+ background: #f6f7fb; 
+ color: #1f2937; 
+ font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; 
 }
-
-.weather-app {
-  background-color: rgba(255, 255, 255, 0.9); /* hvid baggrund med gennemsigtighed */
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  max-width: 400px;
-  width: 100%;
+.weather-app { 
+ max-width: 560px; 
+ margin: 40px auto; 
+ background: #fff; 
+ border-radius: 16px; 
+ padding: 24px; box-shadow: 0 10px 25px rgba(0,0,0,.06); 
 }
-
-input {
-  padding: 0.6rem;
-  font-size: 1rem;
-  margin-right: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 60%;
+.controls { 
+ display: flex; gap: 8px; 
 }
-
-button {
-  padding: 0.6rem 1rem;
-  font-size: 1rem;
-  background-color: #4a90e2;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.controls input { flex: 1; 
+ padding: 12px 14px; 
+ border: 1px solid #e5e7eb; 
+ border-radius: 12px; 
 }
-
-button:hover {
-  background-color: #357ab7;
+.controls button { 
+ padding: 12px 16px; 
+ border: none; border-radius: 12px;
+ background: #111827; color: #fff; 
+ cursor: pointer; 
 }
-
-.weather-info {
-  margin-top: 1.5rem;
+.error { 
+ color: #b91c1c; 
+ margin-top: 12px; }
+.weather-info { 
+ margin-top: 16px; 
 }
-
-.error {
-  color: red;
-  margin-top: 1rem;
+.weather-info img { 
+ width: 80px; height: 80px; 
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.temp { 
+ font-size: 28px;
+ font-weight: 700;
+ margin: 6px 0; 
 }
